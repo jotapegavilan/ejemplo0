@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 0</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+</head>
+
+<body class="bg-white m-0 vh-100 row text-center align-items-center justify-content-center">
+
+    <div class="container bg-light w-50">
+        <h1 class="mb-4">
+            Calculadora simple
+        </h1>
+
+        <div class="">
+            <label for="n1">Ingrese primer dígito</label>
+            <input value="0" type="number" id="n1" class="form-control mb-3">
+            <label for="n2">Ingrese primer dígito</label>
+            <input value="0" type="number" id="n2" class="form-control mb-3">
+            <button class="btn btn-lg btn-primary mx-3 my-3" onclick="res.value=suma(n1.value,n2.value)">+</button>
+            <button class="btn btn-lg btn-primary mx-3" onclick="res.value=resta(n1.value,n2.value)">-</button>
+            <button class="btn btn-lg btn-primary mx-3" onclick="res.value=multiplicacion(n1.value,n2.value)">x</button>
+            <button class="btn btn-lg btn-primary mx-3" onclick="res.value=dividir(n1.value,n2.value)">/</button>
+
+            <label class="d-block mb-3" for="res">Resultado : </label>
+            <input type="number" id="res" readonly class="form-control mb-2">
+        </div>
+        <div>
+            <button onclick="show_hide()" class="btn btn-danger d-block my-3">Ver</button>
+            <img id="imagen" style="width: 80%; display: none;" src="progressive-enhancement.png" alt="">
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
